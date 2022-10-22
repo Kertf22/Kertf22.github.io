@@ -1,0 +1,21 @@
+
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 0px;
+    margin-top: 8px;
+    padding: 10px;
+
+    li {
+        width: fit-content;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #837E9F;
+        margin: 4px;
+    }
+}

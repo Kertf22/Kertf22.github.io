@@ -1,0 +1,36 @@
+
+
+.card {
+    background-color: #302F3D;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 2px;
+        margin-top: 0;
+        color:#837E9F;
+    }
+
+    h2  {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 2px;
+        margin-top: 0;
+        color:#837E9F;
+    }
+
+
+    p {
+        color: #8e8e8e;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}

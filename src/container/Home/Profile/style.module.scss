@@ -1,0 +1,22 @@
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .user-info__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0;
+}
