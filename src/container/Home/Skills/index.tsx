@@ -1,10 +1,10 @@
 import Card from "../../../components/Card"
+import { useStore } from "../../../store";
 import style from "./style.module.scss";
+import shallow from "zustand/shallow"
 
-interface SkillsProps {
-    techs: any[]
-}
-const Skills = ({ techs }: SkillsProps) => {
+const Skills = () => {
+    const { techs } = useStore(state => state, shallow);
 
     return (
         <Card>

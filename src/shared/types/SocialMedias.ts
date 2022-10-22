@@ -1,9 +1,10 @@
 
-interface Tech {
+interface SocialMedias {
     id: string;
     name: string;
+    url: string;
     created_at: Date;
     updated_at: Date;
 };
 
-export default Tech;
+export default SocialMedias;

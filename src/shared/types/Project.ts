@@ -6,9 +6,13 @@ interface Project {
 
     description: string;
 
-    created_at: string;
-    
-    updated_at: string;
+    technologies?: string[];
+
+    images?: string[];
+
+    created_at: Date;
+
+    updated_at: Date;
 }
 
 export default Project;

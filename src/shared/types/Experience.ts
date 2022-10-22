@@ -2,8 +2,12 @@
 interface Experience {
     id: string;
     name: string;
-    created_at: string;
-    updated_at: string;
+    position: string;
+    description: string;
+    start_date: Date;
+    end_date: Date;
+    created_at: Date;
+    updated_at: Date;
 };
 
 export default Experience;

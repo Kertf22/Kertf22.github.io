@@ -1,10 +1,13 @@
-import type { NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import HomeContainer from '../container/Home'
 import styles from '../styles/Home.module.css'
+import axios from "axios";
+import { UserData } from './api/user';
+import { initializeStore } from '../store';
 
-const Home: NextPage = () => {
+
+const Home: NextPage = ({ }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,5 +26,32 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+export const getServerSideProps: GetServerSideProps = async context => {
+  const zustandStore = initializeStore();
+
+  let state = zustandStore.getState();
+
+  const { data: {
+    user,
+    projects,
+    techs,
+    experiences,
+    socialMedias
+  } }: { data: UserData } = await axios.get('http://localhost:3000/api/user');
+
+  state = {
+    ...state,
+    user,
+    projects,
+    techs,
+    experiences,
+    socialMedias
+  }
+
+
+  return { props: { initialZustandState: JSON.parse(JSON.stringify(state)) } }
+}
+
 
 export default Home

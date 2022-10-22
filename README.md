@@ -2,7 +2,6 @@
 
 My portifolio website using mongoDB as database, S3 as image bucket, 
 
-
 The project will be divided in public page and admin page
 
 # Public Page

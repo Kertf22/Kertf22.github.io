@@ -1,25 +1,29 @@
 import Avatar from "../../../components/Avatar";
 import Card from "../../../components/Card"
+import { useStore } from "../../../store";
 import style from "./style.module.scss";
+import shallow from "zustand/shallow";
 
 
+const Profile = () => {
 
-const Profile = ({ userInfo }: { userInfo: any }) => {
+    const { user } = useStore(state => state, shallow);
+
+    if (!user) return null;
 
     return (
         <Card>
             <div className={style["user-info"]}>
                 <Avatar
-                    src="https://avatars.githubusercontent.com/u/70054149?v=4"
+                    src={user.avatar}
                     alt="Paulo"
                     size="large"
                 />
 
                 <div className={style["user-info__content"]}>
-                    <h1>Paulo Hercílio</h1>
-                    <h2>Developer</h2>
-                    <p>I am a developer</p>
-                    <p>Brazil</p>
+                    <h1>{user.name}</h1>
+                    <h2>{user.function}</h2>
+                    <p>{user.description}</p>
                 </div>
             </div>
         </Card>

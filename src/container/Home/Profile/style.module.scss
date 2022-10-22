@@ -3,12 +3,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
 
     .user-info__content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: justify;
     }
 }
 

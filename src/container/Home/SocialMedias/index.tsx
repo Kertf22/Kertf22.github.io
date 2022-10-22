@@ -1,18 +1,33 @@
 import Card from "../../../components/Card"
+import { useStore } from "../../../store";
+import getIcons from "../../../util/getIcons";
 import style from "./style.module.scss";
+import shallow from "zustand/shallow"
 
-interface SocialMediasProps {
-    socialMedias: any[]
-}
+const SocialMedias = () => {
 
-const SocialMedias = ({ socialMedias }: SocialMediasProps) => {
+    const { socialMedias, user } = useStore(state => state, shallow);
+
 
     return (
         <Card>
             <ul className={style["social-media"]}>
+
+
+                {
+                    // Here I will place some personal information 
+                    // about me and my social medias
+                }
+                <li>
+                    {getIcons("Location")} <span>{user?.country}</span>
+                </li>
+
                 {socialMedias.map((item, index) => (
                     <li key={index}>
-                        <a href={item.url}>{item.name}</a>
+                        <>
+                            {getIcons(item.name)}
+                            <a href={item.url}> {item.name}</a>
+                        </>
                     </li>
                 ))}
             </ul>

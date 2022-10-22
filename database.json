@@ -1,0 +1,170 @@
+{
+    "user": {
+        "name": "Paulo",
+        "age": 20,
+        "function": "Full Stack Developer",
+        "description": "I'm a Full Stack Developer with 2 years of experience in the area. I'm passionate about technology and I'm always looking for new challenges.",
+        "country": "Brazil",
+        "avatar": "https://avatars.githubusercontent.com/u/70054149?v=4"
+    },
+    "projects": [
+        {
+            "name": "GRS -Bet",
+            "description": "A betting platform that allows users to bet on sports events and earn money.",
+            "technologies": [
+                "React",
+                "JavaScript",
+                "CSS",
+                "PHP",
+                "Laravel",
+                "MYSQL"
+            ],
+            "images": [
+                "https://drive.google.com/uc?id=1haEnxj-CFXuzvxFURbGoq24nSKY8ISZi",
+                "https://drive.google.com/uc?id=1Lr4vO-TIk1I3wj8Q4-kCZurdlHH9Nr_S"
+            ]
+        },
+        {
+            "name": "Saude para todos",
+            "description": "A platform that allows users to find doctors and clinics near them.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Jquery",
+                "MYSQL",
+                "PHP",
+                "Laravel"
+            ]
+        },
+        {
+            "name": "Portal de Obras",
+            "description": "A Govern platform that allows users to find construction companies near them.",
+            "technologies": [
+                "React",
+                "CSS",
+                "Typescript",
+                "Node.js",
+                "Express",
+                "Typeorm",
+                "MYSQL"
+            ]
+        },
+        {
+            "name": "Portal de Licitações",
+            "description": "A Govern platform that allows users to find public tenders near them.",
+            "technologies": [
+                "React",
+                "CSS",
+                "Typescript",
+                "Node.js",
+                "Express",
+                "Typeorm",
+                "MYSQL"
+            ]
+        },
+        {
+            "name": "Portal de Contratos",
+            "description": "A Govern platform that allows users to find public tenders near them.",
+            "technologies": [
+                "React",
+                "CSS",
+                "Typescript",
+                "Node.js",
+                "Express",
+                "Typeorm",
+                "MYSQL"
+            ]
+        },
+        {
+            "name": "Sistema de Transporte",
+            "description": "A Govern platform used to manage the internal transport of the company.",
+            "technologies": [
+                "Next.js",
+                "React",
+                "CSS",
+                "Typescript",
+                "Node.js",
+                "Prisma",
+                "Express",
+                "MYSQL"
+            ]
+        }
+    ],
+    "techs": [
+        {
+            "name": "React",
+            "description": "A JavaScript library for building user interfaces"
+        },
+        {
+            "name": "Next.js",
+            "description": "The React Framework for Production"
+        },
+        {
+            "name": "Node.js",
+            "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+        },
+        {
+            "name": "Express",
+            "description": "Fast, unopinionated, minimalist web framework for Node.js"
+        },
+        {
+            "name": "Typescript",
+            "description": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript."
+        },
+        {
+            "name": "Jquery",
+            "description": "JQuery is a fast, small, and feature-rich JavaScript library."
+        },
+        {
+            "name": "PHP",
+            "description": "PHP is a popular general-purpose scripting language that is especially suited to web development."
+        },
+        {
+            "name": "Laravel",
+            "description": "Laravel is a web application framework with expressive, elegant syntax."
+        },
+        {
+            "name": "MYSQL",
+            "description": "MySQL is an open-source relational database management system."
+        },
+        {
+            "name": "CSS",
+            "description": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML."
+        },
+        {
+            "name": "JavaScript",
+            "description": "JavaScript is a high-level, interpreted programming language."
+        }
+    ],
+    "experiences": [
+        {
+            "name": "Sedurbs - Secretary of State for Urban Development and Sustainability",
+            "description": "I worked as a Full Stack Developer, developing the Portal de Obras, Portal de Licitações, Portal de Contratos and Sistema de Transporte.",
+            "position": "Full Stack Developer",
+            "start_date": "2020-01-01",
+            "end_date": "2021-01-01"
+        },
+        {
+            "name": "Freelancer - Front-end Developer",
+            "description": "I worked as a Front-end, developing the GRS -Bet for an Australian company.",
+            "position": "Front-end",
+            "start_date": "2020-01-01",
+            "end_date": "2021-01-01"
+        }
+    ],
+    "socialMedias": [
+        {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/paulo-herc%C3%ADlio-santana-8042311b5/"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/Kertf22"
+        },
+        {
+            "name": "Gmail",
+            "url": "paulo.hercilio2015@gmail.com"
+        }
+    ]
+}

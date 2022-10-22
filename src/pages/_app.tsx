@@ -1,8 +1,22 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
+import { useCreateStore, Provider } from '../store';
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+interface pageProps {
+  initialZustandState: any
+}
+
+function MyApp({ Component, pageProps }: AppProps<pageProps>) {
+
+  // Here we create the store and pass the initial that will comes from the server
+  const createStore = useCreateStore(pageProps.initialZustandState)
+
+  return (
+    <Provider createStore={createStore}>
+      <Component {...pageProps} />
+    </Provider>
+  )
 }
 
 export default MyApp
